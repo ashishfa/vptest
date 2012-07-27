@@ -3,7 +3,7 @@ require 'mechanize'
 require 'mysql'
 
 
-
+# this code is a module to get the info about a link - fetch it and then extract relevant tags 
 
 #fetch a link and terurn the html 
 def fetch_link(uri)
