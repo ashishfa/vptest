@@ -37,6 +37,7 @@ def fetch_info(url)
 		h["image"] = node["content"]
 		puts h["image"]
 	end
+	
 	return h
 end
 
@@ -44,12 +45,12 @@ end
 
 #saves the content in the data_image table  
 def save_content(record)
-	
-	title = record["title"]
+
 	id = record["id"]
+	title = record["title"]
 	desc = record["desc"]
 	url = record["url"]
-	path  = record["path"]
+	path  = ""
 	
 	begin
 		db =  Mysql.real_connect('localhost', 'ashish', 'ashish', 'content')
